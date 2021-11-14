@@ -1,8 +1,9 @@
 const turnOnOff = document.getElementById('turnOnOff');
+
 const lampara = document.getElementById('lampara');
 
-function IsLampBroken() {
-    return lampara.src.indexOf('Brbken') > -1;
+function isLampBroken() {
+    return lampara.src.indexOf('broke' ) > -1;
 }
 function lampOn() {
     if (!lampIsBroken()) {
