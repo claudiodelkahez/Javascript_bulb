@@ -1,2 +1,2 @@
 # Javascript_bulb
-bull on / off in JavaScript
+bulb on / off in JavaScript
