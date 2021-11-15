@@ -3,16 +3,19 @@ const turnOnOff = document.getElementById('turnOnOff');
 const lampara = document.getElementById('lampara');
 
 function isLampBroken() {
-    return lampara.src.indexOf('broke' ) > -1;
+    return lampara.src.indexOf('broke') > -1
 }
+
 function lampOn() {
-    if (!lampIsBroken()) {
+    if (!isLampBroken()) {
         lampara.src = './img/on.jpg';
     }
 }
+
 function lampOff() {
-    if (!lampIsBroken()) {
+    if (!isLampBroken()) {
         lampara.src = './img/off.jpg';
+        turnOnOff.textContent = 'on';
     }
 }
 
